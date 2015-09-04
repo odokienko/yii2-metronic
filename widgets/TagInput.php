@@ -4,14 +4,14 @@
  * @license http://yii2metronic.icron.org/license.html
  */
 
-namespace dlds\metronic\widgets;
+namespace odokienko\metronic\widgets;
 
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
-use dlds\metronic\widgets\TextInputWidget;
-use dlds\metronic\bundles\TagInputAsset;
+use odokienko\metronic\widgets\TextInputWidget;
+use odokienko\metronic\bundles\TagInputAsset;
 
 /**
  * TextInputWidget renders text input widget.

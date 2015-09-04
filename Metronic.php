@@ -1,16 +1,16 @@
 <?php
 /**
- * @link http://www.digitaldeals.cz/
- * @copyright Copyright (c) 2014 Digital Deals s.r.o. 
- * @license http://www.digitaldeals.cz/license/
+ * @link https://github.com/odokienko/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
-namespace dlds\metronic;
+namespace odokienko\metronic;
 
 use Yii;
 use yii\web\AssetBundle;
 use yii\base\InvalidConfigException;
-use dlds\metronic\bundles\ThemeAsset;
+use odokienko\metronic\bundles\ThemeAsset;
 
 /**
  * This is the class of Metronic Component
@@ -159,7 +159,7 @@ class Metronic extends \yii\base\Component {
     /**
      * Classes paths
      */
-    const CLASS_HTML = '@vendor/dlds/yii2-metronic/helpers/Html.php';
+    const CLASS_HTML = '@vendor/odokienko/yii2-metronic/helpers/Html.php';
 
     /**
      * @var string version

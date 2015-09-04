@@ -1,29 +1,29 @@
 <?php
 
 /**
- * @link http://www.digitaldeals.cz/
- * @copyright Copyright (c) 2014 Digital Deals s.r.o. 
- * @license http://www.digitaldeals.cz/license/
+ * @link https://github.com/odokienko/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
-namespace dlds\metronic\bundles;
+namespace odokienko\metronic\bundles;
 
 use yii\web\AssetBundle;
-use dlds\metronic\Metronic;
+use odokienko\metronic\Metronic;
 
 class ThemeAsset extends AssetBundle {
 
     /**
      * @var string source assets path
      */
-    public $sourcePath = '@dlds/metronic/assets/admin/{version}';
+    public $sourcePath = '@odokienko/metronic/assets/admin/{version}';
 
     /**
      * @var array depended bundles
      */
     public $depends = [
-        'dlds\metronic\bundles\CoreAsset',
-        'dlds\metronic\bundles\StyleBasedAsset',
+        'odokienko\metronic\bundles\CoreAsset',
+        'odokienko\metronic\bundles\StyleBasedAsset',
     ];
 
     /**

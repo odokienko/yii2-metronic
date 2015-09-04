@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @copyright Copyright (c) 2014 Digital Deals s.r.o.
- * @license http://www.digitaldeals.cz/license/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
 namespace yii\helpers;
 
 use yii\helpers\ArrayHelper;
-use dlds\metronic\bundles\Select2Asset;
+use odokienko\metronic\bundles\Select2Asset;
 
 /**
  * Html helper

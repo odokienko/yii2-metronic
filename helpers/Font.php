@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @copyright Copyright (c) 2014 Digital Deals s.r.o.
- * @license http://www.digitaldeals.cz/license/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
-namespace dlds\metronic\helpers;
+namespace odokienko\metronic\helpers;
 
-use dlds\metronic\Metronic;
+use odokienko\metronic\Metronic;
 use yii\helpers\Html;
 
 /**

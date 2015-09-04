@@ -5,12 +5,12 @@
  * @license http://yii2metronic.icron.org/license.html
  */
 
-namespace dlds\metronic\widgets;
+namespace odokienko\metronic\widgets;
 
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
-use dlds\metronic\bundles\ModalAsset;
+use odokienko\metronic\bundles\ModalAsset;
 
 /**
  * Modal renders a modal window that can be toggled by clicking on a button.

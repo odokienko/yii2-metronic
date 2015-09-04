@@ -1,11 +1,11 @@
 <?php
 
 /**
- * @copyright Copyright (c) 2014 Digital Deals s.r.o.
- * @license http://www.digitaldeals.cz/license/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
-namespace dlds\metronic\bundles;
+namespace odokienko\metronic\bundles;
 
 use yii\web\AssetBundle;
 
@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  */
 class DateRangePickerAsset extends AssetBundle {
 
-    public $sourcePath = '@dlds/metronic/assets';
+    public $sourcePath = '@odokienko/metronic/assets';
     public $js = [
         'plugins/bootstrap-daterangepicker/moment.min.js',
         'plugins/bootstrap-daterangepicker/daterangepicker.js',
@@ -24,7 +24,7 @@ class DateRangePickerAsset extends AssetBundle {
         'plugins/bootstrap-datetimepicker/css/datetimepicker.css',
     ];
     public $depends = [
-        'dlds\metronic\bundles\CoreAsset',
+        'odokienko\metronic\bundles\CoreAsset',
     ];
 
 }

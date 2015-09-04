@@ -1,16 +1,16 @@
 <?php
 /**
- * @copyright Copyright (c) 2014 Digital Deals s.r.o.
- * @license http://www.digitaldeals.cz/license/
+ * @copyright Copyright (c) 2015 Evgen Odokienko
+ * @license https://github.com/odokienko/license/
  */
 
-namespace dlds\metronic\bundles;
+namespace odokienko\metronic\bundles;
 
 use yii\web\AssetBundle;
 
 class FontAsset extends AssetBundle
 {
-    public $sourcePath = '@dlds/metronic/assets';
+    public $sourcePath = '@odokienko/metronic/assets';
 
     public $css = [
         'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all',

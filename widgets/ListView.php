@@ -5,12 +5,12 @@
  * @license http://yii2metronic.icron.org/license.html
  */
 
-namespace dlds\metronic\widgets;
+namespace odokienko\metronic\widgets;
 
 use yii\helpers\Url;
 use \yii\helpers\ArrayHelper;
-use dlds\metronic\bundles\ListViewAsset;
-use dlds\metronic\bundles\ListViewSortableAsset;
+use odokienko\metronic\bundles\ListViewAsset;
+use odokienko\metronic\bundles\ListViewSortableAsset;
 
 class ListView extends \yii\widgets\ListView {
 
