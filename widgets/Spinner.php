@@ -53,7 +53,7 @@ class Spinner extends InputWidget
     /**
      * @var array the configuration array for [[Button]].
      */
-    public $buttonsConfig = ['type' => Button::TYPE_M_BLUE];
+    public $buttonsConfig = ['type' => Button::TYPE_DEFAULT];
     /**
      * @var array the HTML attributes for the input element.
      */

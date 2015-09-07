@@ -23,11 +23,6 @@ class Metronic extends \yii\base\Component {
     public static $assetsBundle;
 
     /**
-     * Assets link
-     */
-    const ASSETS_LINK = __DIR__.'/assets';
-
-    /**
      * Theme
      */
     const VERSION_1 = 'layout';
@@ -243,9 +238,9 @@ class Metronic extends \yii\base\Component {
             throw new InvalidConfigException('You have to specify resources locations to be able to create symbolic links. Specify "admin" and "global" theme folder locations.');
         }
 
-        if (!is_link(self::ASSETS_LINK) && !is_dir(self::ASSETS_LINK))
+        if (!is_link(__DIR__.'/assets') && !is_dir(__DIR__.'/assets'))
         {
-            symlink($this->resources, self::ASSETS_LINK);
+            symlink($this->resources, __DIR__.'/assets');
         }
     }
 

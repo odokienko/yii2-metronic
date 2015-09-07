@@ -280,7 +280,7 @@ Metronic::registerThemeAsset($this);
                                         'actions' => [
                                             'label' => 'Action',
                                             'button' => [
-                                                'type' => Button::TYPE_M_BLUE,
+                                                'type' => Button::TYPE_DEFAULT,
                                                 'options' => ['data-hover' => 'dropdown', 'delay' => '1000'],
                                             ],
                                             'dropdown' => [
