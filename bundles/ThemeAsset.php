@@ -16,7 +16,7 @@ class ThemeAsset extends AssetBundle {
     /**
      * @var string source assets path
      */
-    public $sourcePath = '@odokienko/metronic/assets/admin/{version}';
+    public $sourcePath = '@odokienko/metronic/assets';
 
     /**
      * @var array depended bundles
@@ -30,18 +30,18 @@ class ThemeAsset extends AssetBundle {
      * @var array css assets
      */
     public $css = [
-        'css/layout.css',
-        'css/themes/{theme}.css',
-        'css/custom.css',
+        'admin/current/css/layout.css',
+        'admin/current/css/themes/{theme}.css',
+        'admin/current/css/custom.css',
     ];
 
     /**
      * @var array js assets
      */
     public $js = [
-        'scripts/layout.js',
-//        'scripts/app.js',
-//        'scripts/init.js',
+        'admin/current/scripts/layout.js',
+//        'admin/current/scripts/app.js',
+//        'admin/current/scripts/init.js',
     ];
 
     /**
@@ -52,6 +52,12 @@ class ThemeAsset extends AssetBundle {
         $this->_handleSourcePath();
 
         $this->_handleDynamicCss();
+
+        \Yii::$app->controller->view->registerJs(<<<"JS4"
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+JS4
+        , \yii\web\View::POS_END);
 
         return parent::init();
     }

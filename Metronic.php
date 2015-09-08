@@ -242,6 +242,12 @@ class Metronic extends \yii\base\Component {
         {
             symlink($this->resources, __DIR__.'/assets');
         }
+
+        if (!is_link(__DIR__.'/assets/admin/current') && !is_dir(__DIR__.'/assets/admin/current'))
+        {
+            symlink($this->resources.'/admin/'.$this->version, __DIR__.'/assets/admin/current');
+        }
+
     }
 
     public function parseAssetsParams(&$string)
