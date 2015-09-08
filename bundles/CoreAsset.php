@@ -22,6 +22,7 @@ class CoreAsset extends AssetBundle {
     public $depends = [
         'odokienko\metronic\bundles\FontAsset',
         'yii\bootstrap\BootstrapPluginAsset',
+        'yii\web\YiiAsset',
     ];
 
     /**
