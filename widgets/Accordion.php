@@ -130,6 +130,13 @@ class Accordion extends Widget
         $type = ArrayHelper::getValue($item, 'type', self::ITEM_TYPE_DEFAULT);
         Html::addCssClass($options, 'panel panel-' . $type);
         $id = $this->options['id'] . '-collapse' . $index;
+
+        if ( ($icon = ArrayHelper::getValue($item, 'icon', null)) && ArrayHelper::getValue($item, 'showIcon', false))
+        {
+            $item['header'] = Html::tag('i', '', ['alt' => $item['header'], 'class' => $icon]).'&nbsp;'
+                . Html::tag('span', $item['header'], ['alt' => $item['header'], 'class' => 'caption-subject']);
+        }
+
         $options = ArrayHelper::getValue($item, 'contentOptions', []);
         $options['id'] = $id;
         Html::addCssClass($options, 'panel-collapse collapse');
