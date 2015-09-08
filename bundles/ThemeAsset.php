@@ -16,7 +16,7 @@ class ThemeAsset extends AssetBundle {
     /**
      * @var string source assets path
      */
-    public $sourcePath = '@odokienko/metronic/assets';
+    public $sourcePath = '@odokienko/metronic/assets/admin/{version}';
 
     /**
      * @var array depended bundles
@@ -30,18 +30,18 @@ class ThemeAsset extends AssetBundle {
      * @var array css assets
      */
     public $css = [
-        'admin/current/css/layout.css',
-        'admin/current/css/themes/{theme}.css',
-        'admin/current/css/custom.css',
+        'css/layout.css',
+        'css/themes/{theme}.css',
+        'css/custom.css',
     ];
 
     /**
      * @var array js assets
      */
     public $js = [
-        'admin/current/scripts/layout.js',
-//        'admin/current/scripts/app.js',
-//        'admin/current/scripts/init.js',
+        'scripts/layout.js',
+//        'scripts/app.js',
+//        'scripts/init.js',
     ];
 
     /**
